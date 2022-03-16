@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Задание 14</title>
+    <script>
+ $(document).ready(function () {
+        $("button").click(function () {
+        var links = $('li> a');
+        // перебор результатов
+        for (var i = 0; i < links.length; i++) {
+        alert(links[i].href);
+        }
+        });
+});
+    </script>
+</head>
+<body>
+    <div class="container alert alert-info">
+        <ul>
+            <li><a href="http://jquery.com">jQuery</a></li>
+            <li><a href="http://jqueryui.com">jQuery UI</a></li>
+            <li><a href="http://blog.jquery.com">jQuery Blog</a></li>
+        </ul>
+           <button class="btn btn-success">Start query</button>
+    </div>
+</body>
+</html>
+    

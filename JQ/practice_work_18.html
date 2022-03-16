@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Задание 18</title>
+    <script>
+$(document).ready(function () {
+        $("button").click(function () {
+        alert("Value: " + $("#test").val());
+        });
+});
+    </script>
+</head>
+<body>
+    <div class="container alert alert-warning">
+        <p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+        <button class="btn btn-info">вывести оповещение</button>
+    </div>
+</body>
+</html>
+
+    

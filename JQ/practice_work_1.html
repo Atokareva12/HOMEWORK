@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Задание 1</title>
+    <script>
+        $(document).ready(function () {
+        $("button").click(function () {
+        $(".alert").hide();
+        });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+            <h2>Это заголовок</h2>
+            <div class="alert alert-dark">
+                <p>Это параграф.</p>
+                <p>Скроется, когда нажмешь на кнопку.</p> 
+            </div>
+         
+            <button class=" btn btn-danger">ТЫК</button>
+    </div>
+    
+</body>
+</html>

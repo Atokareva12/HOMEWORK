@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Задание 7</title>
+    <script>
+$(document).ready(function () {
+        $("input").focus(function () {
+        $(this).css("background-color", "#cccccc");
+        });
+        $("input").blur(function () {
+        $(this).css("background-color", "#ffffff");
+        });
+});
+    </script>
+</head>
+    <body>
+        <div class="container alert alert-danger">
+            Name: <input type="text" name="fullname"><br>
+            Email: <input type="text" name="email">
+        </div>
+    </body>
+</html>
+    

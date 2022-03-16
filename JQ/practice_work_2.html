@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Задание 2</title>
+    <script>
+$(document).ready(function () {
+        $("#but1").click(function () {
+              $("#test").hide();
+              $("#but2").show();
+              $("#but1").hide();
+
+        });
+        
+        $("#but2").click(function () {
+              $("#test").show();
+        });
+       
+});
+       </script>
+</head>
+<body>
+       <div class="container">
+              <h2>Это заголовок 2</h2>
+              <div id="test" class="alert alert-primary"><p>Это параграф.</p>
+                     <p>НУЖНО НАЖАТЬ.</p>
+              </div>
+
+              <button class= "btn btn-success" id="but1">СКРЫТЬ</button>
+              <button class = "btn btn-warning" style = "display: none;" id="but2">ОТКРЫТЬ</button>
+       </div>
+</body>
+</html>
